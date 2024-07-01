@@ -7,8 +7,12 @@ name: Step 4, TBD-step-4-name
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  # Add events that trigger this workflow
-  # TBD-step-4-event:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -30,9 +34,14 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  on_TBD-step-4-event:
-    name: On TBD-step-4-event
-    needs: get_current_step
+#  check_results: #TODO
+#    name: Check results
+#    needs: get_current_step
+
+
+  update_to_X:
+    name: Update to the final site
+    needs: [get_current_step] #, check_results]
 
     # We will only run this action when:
     # 1. This repository isn't the template repository.
@@ -41,7 +50,8 @@ jobs:
     # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
       ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == 4 }}
+          && needs.get_current_step.outputs.current_step == 4 
+          && github.event_name == 'push' && github.ref == 'refs/heads/main'}}
 
     # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
@@ -53,13 +63,24 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches.
 
-      # TBD-step-4-additional-steps
+      - name: Copy Readme
+        run: |
+          # copy the current README.md to week4
+          cp README.md week4/README.md
+          git add week4/README.md      
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git commit -m "Add Readme to week 4"
+          git push origin main
+          echo "Push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # In README.md, switch step 4 for step 5.
-      - name: Update to step 5
+      # this is the last week, so this step can be at teh end
+      - name: Update to step X
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 4
-          to_step: 5
-          branch_name: tbd-branch-name
+          to_step: X
+          #branch_name: tbd-branch-name

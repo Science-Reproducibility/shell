@@ -7,8 +7,12 @@ name: Step 3, TBD-step-3-name
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  # Add events that trigger this workflow.
-  # TBD-step-3-event:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -30,9 +34,13 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  on_TBD-step-3-event:
-    name: On TBD-step-3-event
-    needs: get_current_step
+#  check_results: #TODO
+#    name: Check results
+#    needs: get_current_step
+
+  update_to_week4:
+    name: Update to week 4
+    needs: [get_current_step] #, check_results]
 
     # We will only run this action when:
     # 1. This repository isn't the template repository.
@@ -41,7 +49,8 @@ jobs:
     # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
       ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == 3 }}
+          && needs.get_current_step.outputs.current_step == 3 
+          && github.event_name == 'push' && github.ref == 'refs/heads/main'}}
 
     # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
@@ -53,8 +62,6 @@ jobs:
         with:
           fetch-depth: 0 # Let's get all the branches.
 
-      # TBD-step-3-additional-steps
-
       # In README.md, switch step 3 for step 4.
       - name: Update to step 4
         uses: skills/action-update-step@v2
@@ -62,4 +69,25 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 3
           to_step: 4
-          branch_name: tbd-branch-name
+          #branch_name: tbd-branch-name
+
+      - name: Create a new branch
+        run: |
+          echo "Make a branch"
+          BRANCH=week4
+          git checkout -b $BRANCH
+          # copy the current README.md to week3
+          cp .github/steps/3-loop_script.md week3/README.md
+          git add week3/README.md      
+          cp -r .github/working_dir/week4 .
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git add week4/*
+          git commit -m "Add step working directory for step 4"
+          git push origin $BRANCH
+          echo "Push"
+          git push --set-upstream origin $BRANCH
+          echo "Restore main"
+          git checkout main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
