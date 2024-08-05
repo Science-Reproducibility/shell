@@ -5,7 +5,7 @@
   TBD-step-2-notes.
 -->
 
-# Week 2: More Shell commands
+# Week 2
 In the second week:
 - we will learn more about the Shell
 - we will use Shell commands that could be used to check the content of the files
