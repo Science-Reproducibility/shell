@@ -41,6 +41,33 @@ In this course you will:
 The entire course will have 4 parts/weeks, each part will have multiple sections that will require reading short text or specific section from the external sources, watching a short video or practicing your knowledge in hands-on activities.
 Every week should take no more than 1--2, hours and significantly less if you have prior experience.
 
+The topics covered in four weeks:
+
+- Week 1:
+  - What is Shell?
+  - Working with GitHub and Codespace.
+  - Exercise 1: Practicing using shell commands.
+  - Exercise 2: Creating new files.
+- Week 2:
+  - More about Shell.
+  - Week 1 review.
+  - Working with files content.
+  - Practice using new commands.
+  - Exercise 1: Merging content of the files.
+  - Exercise 2: Using Pipes to work with file content.
+- Week 3:
+  - Week 2 review.
+  - For loops and simple scripts.
+  - Exercise 1: Using loops.
+  - Creating a script.
+  - Exercise 2: Creating a script with an input.
+- Week 4:
+  - Week 3 review.
+  - Searching and editing files.
+  - Exercise 1: Creating a script to search files.
+  - Environmental Variables. 
+
+
 ### BSSw Fellowship Program
 This course is a part of the [*Best practices for reproducibility and testing in scientific software* series](https://science-reproducibility.github.io/BSSw_course_page/), created for the [Better Scientific Software](https://bssw.io/pages/bssw-fellowship-program) (BSSw) Fellowship project.
 
