@@ -69,20 +69,20 @@ Continue watching the [ABCD/ReproNim video](https://youtu.be/SyKmry47SsY?si=LBNj
 
 ## 3. :keyboard: :white_check_mark: Exercise 1: Using loops
 
-In the new branch that was created for this week `week3` you will find a new directory `week3` that will be used as a working directory for this week. You should specifically use `week2/ex1` for the first exercise. The directory already have some files that will be used for the exercise.
+In the new branch that was created for this week `week3` you will find a new directory `week3` that will be used as a working directory for this week. The directory already have some files that will be used for the exercise.
 
 Last week, we merged 3 files into one using `cat` command. This time, you have 10 files, and the idea is to use a loop to merge them together. Write the output to  `week3/output_loop.txt`.
 
 > [!TIP]
 > If you don't remember how to open Codespace, create a new file and add to the repository, you can review instruction from the previous week [here](./week1/Readme.md)
 
-## 4. :keyboard: :white_check_mark: Exercise 1: Creating a script
+## 4. :keyboard: :white_check_mark: Exercise 2: Creating a script
 
 Do the same as in part 3, but this time create a script `week3/script.sh` to create `week3/output_script.txt`.
 
 In addition, the script should write the names of all the files together with the number of lines in each file to `week3/output_stats.txt`
 
-## 5. :keyboard: :white_check_mark: Exercise 2: Creating a script with an input
+## 5. :keyboard: :white_check_mark: Exercise 3: Creating a script with an input
 
 Update the `script.sh` from the previous point to use the name of the outputs provided as command line arguments, e.g. `./script_input.sh output_script_1.txt output_stats_1.txt`. 
 
