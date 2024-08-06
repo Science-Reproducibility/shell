@@ -32,8 +32,7 @@ In the new branch that was created for this week, `week4`, you will find a new d
 ## 4. :keyboard: :white_check_mark: Exercise 2: Creating a script to search files
 
 In the new branch that was created for this week, `week4`, you will find a new directory, `week4`, that will be used as a working directory for this week. In the directory you will find `massachusetts_cities.csv` file.
-Create a script that finds all cities that have "North" in the name and save it to the new file "output.txt",
-but instead of using format "<City>, <Population>" use a syntax "<City> has population of <Population>".
+Create a script that finds all cities that have "North" in the name and save it to the new file `output_cities.txt`, but instead of using format "<City>, <Population>" use a syntax "<City> has population of <Population>".
 
 ## 5. :book: Environmental Variables
 
