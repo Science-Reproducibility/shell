@@ -65,7 +65,7 @@ jobs:
 
   update_to_week4:
     name: Update to week 4
-    needs: [get_current_step] #, check_results]
+    needs: [get_current_step, check_results]
 
     # We will only run this action when:
     # 1. This repository isn't the template repository.
