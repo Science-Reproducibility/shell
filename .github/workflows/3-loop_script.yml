@@ -34,9 +34,34 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-#  check_results: #TODO
-#    name: Check results
-#    needs: get_current_step
+  check_results:
+    name: Check results
+    needs: get_current_step
+    if: >-
+      ${{ !github.event.repository.is_template
+          && needs.get_current_step.outputs.current_step == 3 
+          && github.event_name == 'push' && github.ref == 'refs/heads/main'}}
+    runs-on: ubuntu-latest
+
+    steps:
+      # We'll need to check out the repository so that we can edit the README.
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Let's get all the branches.
+
+
+      - name: Check the file Exercise 1
+        uses: skills/action-check-file@v1
+        with:
+          file: "week3/output_loop.txt"
+          search: "__¶_¶¶¶_¶¶¶_¶¶_¶¶_________________________¶¶"
+      - name: Check the file Exercise 2 #(add more)
+        uses: skills/action-check-file@v1
+        with:
+          file: "week3/script.sh"
+          search: "output_script.txt"
+
 
   update_to_week4:
     name: Update to week 4
