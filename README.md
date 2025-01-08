@@ -104,12 +104,8 @@ This course is a part of the [*Best practices for reproducibility and testing in
 
 ---
 
-Get help: [Submit an issue](https://github.com/scientific-software-lessons/shell/issues)
+**Get help:** [Submit an issue](https://github.com/scientific-software-lessons/shell/issues)
 
-[MIT License](https://gh.io/mit)
-
-**Acknowledgment**
-
-This work was supported by the Better Scientific Software Fellowship Program, a collaborative effort of the U.S. Department of Energy (DOE), Office of Advanced Scientific Research via ANL under Contract DE-AC02-06CH11357 and the National Nuclear Security Administration Advanced Simulation and Computing Program via LLNL under Contract DE-AC52-07NA27344; and by the National Science Foundation (NSF) via SHI under Grant No. 2327079.
+**Acknowledgment:** This work was supported by the Better Scientific Software Fellowship Program, a collaborative effort of the U.S. Department of Energy (DOE), Office of Advanced Scientific Research via ANL under Contract DE-AC02-06CH11357 and the National Nuclear Security Administration Advanced Simulation and Computing Program via LLNL under Contract DE-AC52-07NA27344; and by the National Science Foundation (NSF) via SHI under Grant No. 2327079.
 
 </footer>
