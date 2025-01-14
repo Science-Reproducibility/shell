@@ -38,8 +38,13 @@ In this course you will:
 
 
 ### Course format
+
 The entire course will have 4 parts/weeks, each part will have multiple sections that will require reading short text or specific section from the external sources, watching a short video or practicing your knowledge in hands-on activities.
 Every week should take no more than 1--2, hours and significantly less if you have prior experience.
+
+> [!IMPORTANT]
+>  You can do the course on your own time, but in February 2025 I will provide more weekly structure and offer virtual office hours.
+>  I will provide the dates on this page very soon.
 
 The topics covered in four weeks:
 
