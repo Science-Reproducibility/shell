@@ -91,5 +91,8 @@ Each execrice will have a similar structure, i.e., uses codespaces and specific 
   - Check the status of tests
   - If all tests pass, merge the Pull Request, this should update a new `README.md` on the main page of the repository (you can reload the page after 30-60s if you don't see the new content)
 
+*In case you want to follow git command line to add a new file, you can also follow this [:eyes: **demo** :eyes:](https://www.dropbox.com/scl/fi/7qtp5krsgbfguu0etge7e/adding_file_cli.mov?rlkey=ngf6b1yu8e6tnlpfq6q0hfg3i&st=p4qfoqvs&dl=0).
+This is optional, we will cover git commands in the next course.*
+
 > [!IMPORTANT]
 > Following all the steps from part 4, including creating and merging the Pull Request, is necessary to move to the next parts of the course.
