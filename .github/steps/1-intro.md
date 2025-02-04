@@ -9,7 +9,7 @@
 
 # Week 1: Shell overview and using shell in codespace
 
-In the first part of the course, we will learn basic information about the Shell and popular Shell commands.
+In the first week/part of the course, we will learn basic information about the Shell and popular Shell commands.
 We will practice using the command in the GitHub codespace.
 
 ## 1 :book: :eyes: What is Shell
@@ -49,14 +49,13 @@ As I mentioned before we will be using GitHub and GitHub Skills templates, if yo
 > [!TIP]
 > - I recommend opening another browser tab with this repository, so you can keep these instructions open for reference all the time.
 > - This is our first exercise (I will use :keyboard: for all exercises), so I will provide very detailed steps to guide you.
-Each execrice will have a similar structure, so it should become automatic very soon.
-> - :eyes: **Demo** :eyes: You can follow this demo TODO if you have any problems
+Each execrice will have a similar structure, i.e., uses codespaces and specific branches, so it should become automatic very soon.
 
-1. Opening Codespace with terminal
+1. Opening Codespace with terminal (you can follow this [:eyes: **demo** :eyes:](https://www.dropbox.com/scl/fi/n99ywl6ibn1mf00f4kefa/open_codespace.mov?rlkey=xe3gtmany7odqaxv02wzsqmax&st=22rglywq&dl=0) if you have any problems)
   -  Start from the landing page of your repository opened in new tab.
-  - Change the branch to "part1" (you should see a new content that was not in the `main` branch)
+  - Change the branch to "week1" (you should see a new content that was not in the `main` branch)
   - Click the green "Code" button located in the middle of the page.
-  - Select the Codespaces tab in the box that pops up and then click the "Create codespace on part1" button.
+  - Select the Codespaces tab in the box that pops up and then click the "Create codespace on week1" button.
   - Verify your codespace is running. The browser should contain a VS Code web-based editor and a terminal.
 2. Practice using the command you learn about from the video in the first section. Here is a list and some examples:
   -  `echo $SHELL`
@@ -78,16 +77,16 @@ Each execrice will have a similar structure, so it should become automatic very 
 ## 4 :eyes: :keyboard: :white_check_mark: Exercise 2: Creating new file
 
 > [!TIP]
-> - This exercise has :keyboard: and :white_check_mark:, that means you will have a specific task and the output will be checked by automatic tests I wrote for this course, and the repository will move to **Part 2** after the task is completed.
-> - This is our first exercise of this type, so I will provide very detailed steps to guide you.
-> - :eyes: **Demo** :eyes: You can follow this demo TODO if you have any problems
+> - This exercise has :keyboard: and :white_check_mark:, that means you will have a specific task and the output will be checked by automatic tests I wrote for this course, and the repository will move to **week 2** after the task is completed.
+> - This is our first exercise of this type, so I will provide very detailed steps to guide you and a couple of demos.
 
 1. Go to terminal in Codespace (you can use the one that you opened in part 3, or follow the instruction from part 3 to open again)
-2. Create a new file (`week1/file1.txt`) to the repository with content "Hello!":
+2. Create a new file (you can follow this [:eyes: **demo** :eyes:](https://www.dropbox.com/scl/fi/bowt9a2xf94qxowa1bppi/adding_file.mov?rlkey=snp8cc5gqm0qn915ot2krjh8f&st=hufdzihz&dl=0) if you have any problems)
   - Go to `week1` directory (if you don't see this directory, you're likely in wrong branch)
   - Create a new file `file1.txt` with a content "Hello" (you can use `touch` or/and `echo` command)
   - Add a new file to the repository and commit the changes
-3. Update the changes to the `main` branch of the repository
+  - Update the changes to the `week1` branch
+3. Update the repository in order to move to the next week/part of the course (you can follow this [:eyes: **demo** :eyes:](https://www.dropbox.com/scl/fi/ogiz8eft9w2m7fs1f1v3p/update_repo.mov?rlkey=5yzx29gnpf8gpfzfyy7ijbnqa&st=yk44hh39&dl=0) if you have any problems)
   - Create a Pull Request to the `main` branch
   - Check the status of tests
   - If all tests pass, merge the Pull Request, this should update a new `README.md` on the main page of the repository (you can reload the page after 30-60s if you don't see the new content)
