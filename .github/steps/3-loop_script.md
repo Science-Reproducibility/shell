@@ -74,7 +74,7 @@ In the new branch that was created for this week `week3` you will find a new dir
 Last week, we merged 3 files into one using `cat` command. This time, you have 10 files, and the idea is to use a loop to merge them together. Write the output to  `week3/output_loop.txt`.
 
 > [!TIP]
-> If you don't remember how to open Codespace, create a new file and add to the repository, you can review instruction from the previous week [here](../week1/Readme.md)
+> If you don't remember how to open Codespace, create a new file and add to the repository, you can review instruction from the previous week [here](../week1/README.md)
 
 ## 4. :keyboard: :white_check_mark: Exercise 2: Creating a script
 
