@@ -45,7 +45,7 @@ Explore the environment variables in the Codespace. Check your current working d
 If your local computer has UNIX or OSX system, compare the variables with your local system.
 
 > [!TIP]
-> If you don't remember how to open Codespace, create a new file and add to the repository, you can review instruction from the previous week [here](./week1/Readme.md)
+> If you don't remember how to open Codespace, create a new file and add to the repository, you can review instruction from the previous week [here](../week1/README.md)
 
 ##
 
@@ -54,4 +54,5 @@ If your local computer has UNIX or OSX system, compare the variables with your l
 >  - Create a Pull Request to the `main` branch
 >  - Check the status of tests
 >  - If all tests pass, merge the Pull Request, this should update a new `README.md` on the main page of the repository (you can reload the page after 30-60s if you don't see the new content)
+>  - You can delete the codespace from the `Codespaces` menu
 
