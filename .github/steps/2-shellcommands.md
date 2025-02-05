@@ -34,7 +34,7 @@ Use `man` to learn about different options.
 > [!TIP]
 > If you don't remember how to open Codespace, create a new file and add to the repository, you can review the instruction from the previous week [here](../week1/README.md).
 >
->  Remember to change the branch to `week2`.
+>  Remember to change the branch to `week2`. If you don't see `week2` in the branch dropdown menu, click on "View all branches".
 
 
 ## 5. :keyboard: :white_check_mark: Exercise 1: Merging content of the files
@@ -55,3 +55,4 @@ In the `week2/ex2` directory you have a file with Massachusetts cities ordered b
 >  - Create a Pull Request to the `main` branch
 >  - Check the status of tests
 >  - If all tests pass, merge the Pull Request, this should update a new `README.md` on the main page of the repository (you can reload the page after 30-60s if you don't see the new content)
+>  - You can delete the codespace from the `Codespaces` menu.
