@@ -95,4 +95,5 @@ Each execrice will have a similar structure, i.e., uses codespaces and specific 
 This is optional, we will cover git commands in the next course.*
 
 > [!IMPORTANT]
-> Following all the steps from part 4, including creating and merging the Pull Request, is necessary to move to the next parts of the course.
+> - Following all the steps from part 4, including creating and merging the Pull Request, is necessary to move to the next parts of the course.
+> - You can delete the codespace from the `Codespaces` menu.
