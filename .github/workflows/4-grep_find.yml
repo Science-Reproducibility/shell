@@ -1,4 +1,4 @@
-name: Step 4, TBD-step-4-name
+name: Step 4, Grep and Find
 
 # This step triggers after TBD-step-4-event-desc.
 # This workflow updates from step 4 to step 5.
