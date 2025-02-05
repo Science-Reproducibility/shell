@@ -32,14 +32,16 @@ Use `man` to learn about different options.
 
   
 > [!TIP]
-> If you don't remember how to open Codespace, create a new file and add to the repository, you can review instruction from the previous week [here](./week1/Readme.md)
+> If you don't remember how to open Codespace, create a new file and add to the repository, you can review the instruction from the previous week [here](../week1/README.md).
+>
+>  Remember to change the branch to `week2`.
 
 
 ## 5. :keyboard: :white_check_mark: Exercise 1: Merging content of the files
 
 In the new branch that was created for this week `week2` you will find a new directory `week2` that will be used as a working directory for this week. You should specifically use `week2/ex1` for the first exercise. The directory already have 3 files.
 
-Your first exercise will be to open Codespace and merge content of the files in the alphabetic order to a new file `week2/ex1/output.txt`.
+Your first exercise will be to open Codespace and merge the content of the files in the alphabetic order to a new file `week2/ex1/output.txt`.
 
 
 ## 6. :keyboard: :white_check_mark: Exercise 2: Using Pipes to work with file content
