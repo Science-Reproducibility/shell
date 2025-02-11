@@ -27,7 +27,7 @@ Welcome to the introduction to the Unix Shell. This course does not require an
 Since we will be using GitHub and GitHub Skills templates, I strongly suggest completing two GitHub skills courses:
 
 - [Introduction to GitHub](https://github.com/skills/introduction-to-github)
-- [Code with Codespace](https://github.com/skills/code-with-codespaces) (the first 3 steps are enough for this course)
+- [Code with Codespace](https://github.com/skills/code-with-codespaces) (the first step is enough for this course)
 
 In this course you will:
 - practice using GitHub and GitHub Skills templates
